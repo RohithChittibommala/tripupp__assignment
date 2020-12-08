@@ -8,7 +8,7 @@
   font-weight: 300;
 }
 section {
-  margin-bottom: 25px;
+  margin: 50px 0px;
 }
 nav {
   display: flex;
@@ -16,7 +16,7 @@ nav {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  transition: 0.6s;
+  /* transition: 0.6s; */
   padding: 20px 60px;
 }
 #nav__logo {
@@ -46,7 +46,6 @@ nav ul li a {
   font-size: 18px;
   font-weight: bold;
   margin: 0 15px;
-  transition: 4.6s ease-in-out all;
 }
 .header {
   display: flex;
@@ -54,12 +53,13 @@ nav ul li a {
   padding: 3% 4%;
 }
 .header__image {
+  min-width: 330px;
   flex: 0.5;
-  min-width: 400px;
 }
 .header__text {
   flex: 0.5;
   display: flex;
+  min-width: 330px;
   flex-direction: column;
   justify-content: center;
 }
@@ -84,7 +84,7 @@ button {
   margin: 25px 0;
   font-size: 18px;
   font-weight: 400;
-  transition: 0.4s ease-in-out all;
+  /* transition: 0.4s ease-in-out all; */
   border-radius: 28px;
   outline: none;
   color: white;
@@ -134,6 +134,7 @@ button i {
   width: 50%;
   flex-direction: column;
   padding: 3px;
+  margin: 10px;
   justify-content: space-evenly;
 }
 .stats__numbers h4,
@@ -154,18 +155,21 @@ h6 {
 .feautres {
   padding: 3% 4%;
   display: flex;
+  flex-wrap: wrap-reverse;
 }
 .feautres__description {
   flex: 0.5;
   display: flex;
   flex-direction: column;
+  min-width: 330px;
   justify-content: space-evenly;
 }
 .feautres__image {
+  min-width: 330px;
   flex: 0.5;
 }
 .feautres__image img {
-  width: 100%;
+  width: 95%;
 }
 .feautres__description h1 {
   font-family: "Montserrat", sans-serif;
@@ -213,10 +217,13 @@ h6 {
 .howItWorks__container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .howItWorks__step {
   flex: 0.3;
   display: flex;
+  min-width: 330px;
+
   flex-direction: column;
   justify-content: space-between;
 }
@@ -242,9 +249,12 @@ h6 {
 }
 .liveClasses__container {
   display: flex;
+  flex-wrap: wrap;
   padding: 3% 4%;
+  margin: 15px 0;
 }
 .liveClasses__image {
+  min-width: 330px;
   flex: 0.5;
 }
 .liveClasses__image img {
@@ -252,6 +262,7 @@ h6 {
   height: 100%;
 }
 .liveClasses__description {
+  min-width: 330px;
   flex: 0.5;
 }
 .liveClasses h1 {
@@ -289,9 +300,11 @@ h6 {
 }
 .jee__feautres {
   display: flex;
+  flex-wrap: wrap;
 }
 .jee__feautres img {
   padding: 2%;
+  min-width: 330px;
   flex: 0.5;
 }
 .jee__description {
@@ -314,4 +327,174 @@ h6 {
   width: 330px;
   padding: 4px;
   /* margin: auto;   */
+}
+.jee button {
+  margin: 20px;
+}
+/* Section Subjects */
+.subjects {
+  padding: 3% 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.subjects h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  color: darkblue;
+  margin-bottom: 25px;
+}
+.subjects__container {
+  /* width: 220px; */
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  justify-content: space-around;
+}
+.subject__card {
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease-in-out all;
+  cursor: pointer;
+  margin-bottom: 15px;
+  width: 240px;
+  padding: 6px 12px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.subject__card img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.subject__card:hover {
+  transform: scale(1.1);
+  /* box-shadow: none; */
+}
+.subject__card h2 {
+  text-align: center;
+  color: #3640ac;
+}
+.subjects button {
+  margin: 30px;
+  font-weight: 600;
+  width: auto;
+}
+.subjects p {
+  font-weight: 1.6em;
+  width: 600px;
+  font-weight: 600;
+  color: grey;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+/* TUTOR's Image section */
+.tutors h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  color: rgb(74, 103, 182);
+  margin-bottom: 25px;
+}
+.tutor {
+  width: 500px;
+}
+.tutors__container {
+  padding: 3% 4%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 15px;
+  flex-wrap: wrap;
+}
+.tutor {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.tutor img {
+  width: 170px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+.tutor div {
+  padding: 12px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 280px;
+  min-width: 300px;
+}
+.tutor div h2 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #0916a5;
+}
+/* Mobile responsive */
+@media screen and (max-width: 720px) {
+  nav ul {
+    display: none;
+  }
+  .header__text h1,
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.1rem;
+    text-align: center;
+    margin: 5px 0;
+  }
+  .header__span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.1rem;
+    color: rgb(33, 38, 110);
+  }
+  .feautres__description h1,
+  .liveClasses h1,
+  .jee h1,
+  .subjects h1,
+  .tutors h1,
+  .howItWorks h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.1rem;
+  }
+  .feautres__description {
+    margin: 10px 0;
+  }
+  .howItWorks img {
+    width: 100%;
+  }
+  .subjects p {
+    padding: 5px 7px;
+    width: 100%;
+  }
+  button {
+    margin: 10px auto;
+  }
+  .stats__info {
+    margin: 10px 0;
+  }
+  .howItWorks__step {
+    margin: 15px 0;
+  }
+  .description__text {
+    margin: 15px;
+  }
+  .howItWorks__container {
+    align-items: center;
+  }
+  .liveClasses__image {
+  }
+  .description__text div {
+    padding: 5px 7px;
+  }
+  .tutors__container {
+    padding: 5px 6px;
+  }
+  .tutor {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .tutor img {
+    width: 160px;
+    margin-bottom: 10px;
+  }
+  /* .jee; */
 }
