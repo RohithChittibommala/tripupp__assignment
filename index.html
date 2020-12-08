@@ -13,15 +13,26 @@
     <nav>
         <a href="#" id="nav__logo">Coursify</a>
         <ul>
-            <li><a class="nav__link" href="#">Live Classes</a></li>
-            <li><a class="nav__link" href="#">Video Library</a></li>
-            <li><a class="nav__link" href="#">Courses</a></li>
-            <li><a class="nav__link" href="#">Books</a></li>
-            <li><a class="nav__link" href="#">Boards</a></li>
-            <li><a class="nav__link" href="#">Exams</a></li>
+            <li><a class="nav__link" href="#howitworks">Live Classes</a></li>
+            <li><a class="nav__link" href="#liveclasses">Video Library</a></li>
+            <li><a class="nav__link" href="#neet">Courses</a></li>
+            <li><a class="nav__link" href="#book">Books</a></li>
+            <li><a class="nav__link" href="#board">Boards</a></li>
+            <li><a class="nav__link" href="#exam">Exams</a></li>
         </ul>
+        <div class="menu__barIcon">
+            <i class="fa fa-2x hamburger fa-bars"></i>
+        </div>
     </nav>
-    <section class="header section">
+    <ul class="nav__links">
+        <li><a class="nav__link" href="#howitworks">Live Classes</a></li>
+        <li><a class="nav__link" href="#liveclasses">Video Library</a></li>
+        <li><a class="nav__link" href="#neet">Courses</a></li>
+        <li><a class="nav__link" href="#book">Books</a></li>
+        <li><a class="nav__link" href="#board">Boards</a></li>
+        <li><a class="nav__link" href="#exam">Exams</a></li>
+    </ul>
+    <section class="header section" id="home">
         <div class="header__text">
             <h1>Clarify your <span class="header__span">doubts</span> <br> in your language</h1>
 
@@ -93,7 +104,7 @@
         </div>
         <div class="feautres__image"><img src="./assets/undraw_book_lover_mkck.svg" alt=""></div>
     </section>
-    <section class="howItWorks section">
+    <section class="howItWorks section" id="howitworks">
         <h1>How it works ?</h1>
         <div class="howItWorks__container">
             <div class="howItWorks__step">
@@ -116,7 +127,7 @@
 
         </div>
     </section>
-    <section class="liveClasses section">
+    <section id="liveclasses" class="liveClasses section">
         <h1> <span class="header__span">LIVE</span> classes</h1>
         <div class="liveClasses__container">
             <div class="liveClasses__image"><img src="./assets/liveclasses.svg" alt=""></div>
@@ -150,7 +161,7 @@
             <button>Book your class now <i class="fa fa-2x fa-long-arrow-right" aria-hidden="true"></i></button>
         </div>
     </section>
-    <section class="jee section">
+    <section class="jee section" id="exam">
         <h1><span class="header__span">JEE</span> Mains & Advanced Preparation</h1>
         <div class="jee__feautres">
             <img src="./assets/online_lesson__monochromatic.svg " alt="">
@@ -166,7 +177,7 @@
         <div class="buttonDiv"><button>Prepare for JEE now <i class="fa fa-2x fa-long-arrow-right"
                     aria-hidden="true"></i></button></div>
     </section>
-    <section class="jee section">
+    <section class="jee section" id="neet">
         <h1><span class="header__span">NEET</span> Preparation</h1>
         <div class="jee__feautres">
             <img src="./assets/online_lesson__monochromatic.svg " alt="">
@@ -208,7 +219,7 @@
         </div>
 
     </section>
-    <section class="subjects section">
+    <section class="subjects section" id="book">
         <h1>Free acess to 1000's of books</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam beatae voluptate recusandae. Perspiciatis id
             quos neque quo eos hic obcaecati.</p>
@@ -256,7 +267,7 @@
         </div>
 
     </section>
-    <section class="subjects section">
+    <section class="subjects section" id="board">
         <h1>State Boards</h1>
         <p>Prepare for board exams from the best teachers</p>
         <div class="subjects__container">

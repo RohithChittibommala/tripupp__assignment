@@ -7,6 +7,12 @@
   font-family: "Poppins", sans-serif;
   font-weight: 300;
 }
+html {
+  scroll-behavior: smooth;
+}
+ul.nav__links {
+  display: none;
+}
 section {
   margin: 50px 0px;
 }
@@ -19,6 +25,17 @@ nav {
   /* transition: 0.6s; */
   padding: 20px 60px;
 }
+.nav ul li,
+.nav__link {
+  transition: 0.5s ease all;
+}
+.hamburger {
+  color: rgb(136, 14, 75);
+  display: none;
+}
+.menu__barIcon {
+  display: none;
+}
 #nav__logo {
   font-size: 2.5em;
   font-weight: 700;
@@ -30,7 +47,8 @@ nav {
   position: relative;
   transition: 0.6s;
 }
-nav ul {
+nav ul,
+.nav__links {
   position: relative;
   display: flex;
   justify-content: center;
@@ -40,12 +58,17 @@ nav ul li {
   position: relative;
   list-style: none;
 }
-nav ul li a {
+nav ul li a,
+a {
   text-decoration: none;
   color: #121112;
   font-size: 18px;
   font-weight: bold;
   margin: 0 15px;
+}
+.nav__link:hover {
+  transform: scale(1.08);
+  color: #e7305b;
 }
 .header {
   display: flex;
@@ -429,10 +452,37 @@ h6 {
   font-weight: 600;
   color: #0916a5;
 }
+.hamburger {
+  transition: 0.5s ease-in-out all;
+  cursor: pointer;
+}
 /* Mobile responsive */
 @media screen and (max-width: 720px) {
+  nav {
+    padding: 20px;
+    /* height: 80px; */
+  }
+  .header__button {
+    margin: 20px 0;
+  }
+  .header__text h1 {
+    margin: 10px 0;
+  }
   nav ul {
     display: none;
+  }
+  li {
+    list-style: none;
+    margin: 12px 20px;
+    text-align: end;
+  }
+  .nav__links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav__link {
+    color: rgb(37, 30, 30);
+    transition: 0.5s ease all;
   }
   .header__text h1,
   h1 {
@@ -480,8 +530,6 @@ h6 {
   .howItWorks__container {
     align-items: center;
   }
-  .liveClasses__image {
-  }
   .description__text div {
     padding: 5px 7px;
   }
@@ -491,6 +539,9 @@ h6 {
   .tutor {
     width: 100%;
     flex-wrap: wrap;
+  }
+  .menu__barIcon {
+    display: block;
   }
   .tutor img {
     width: 160px;
